@@ -37,4 +37,20 @@ public class UserServiceImpl implements UserService {
 		return local;
 	}
 
+	
+	//getting user by usernamre
+	@Override
+	public User getUser(String username) {
+		// TODO Auto-generated method stub
+		return this.userRepository.findByUsername(username);
+	}
+
+
+	@Override
+	public void deleteUser(Long userId) {
+		this.userRepository.deleteById(userId);
+		
+		
+	}
+
 }
