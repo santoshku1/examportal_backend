@@ -28,18 +28,18 @@ public class ExamserverApplication implements CommandLineRunner {
                System.out.println("starting code...");	
                
                User user=new User();
-               user.setFirstName("Santosh");
+               user.setFirstName("Aman");
                user.setLastName("yadav");
-               user.setUsername("santosh123");
+               user.setUsername("aman@123");
                user.setPassword("abc");
                
-               user.setEmail("santosh@gmail.com");
+               user.setEmail("aman@gmail.com");
                user.setProfile("default.png");
                
                Role role1=new Role();
                
-               role1.setRoleId(44L);
-               role1.setRoleName("ADMIN");
+               role1.setRoleId(45L);
+               role1.setRoleName("normaluser");
                
                Set<UserRole> userRoleSet=new HashSet<>();
                UserRole userRole=new UserRole();
